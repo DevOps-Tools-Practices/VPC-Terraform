@@ -12,7 +12,7 @@ resource "aws_vpc" "aws-vpc" {
   enable_dns_support   = true
   enable_dns_hostnames = true
   tags = {
-    Name = "whizlabs-vpc"
+    Name = "example-vpc"
   }
 }
 
@@ -21,7 +21,7 @@ resource "aws_vpc" "aws-vpc" {
 resource "aws_internet_gateway" "aws_ig" {
   vpc_id = aws_vpc.aws-vpc.id
   tags = {
-    Name = "whizlabs-ig"
+    Name = "example-ig"
   }
 }
 
